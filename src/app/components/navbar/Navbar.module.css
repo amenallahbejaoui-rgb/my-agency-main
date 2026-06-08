@@ -1,0 +1,87 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 3rem;
+  background: rgba(44, 44, 44, 0.95);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+  color: white;
+}
+
+.navLeft {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+.creative {
+  color: white;
+}
+
+.studio {
+  color: white;
+  margin-top: -2px;
+}
+
+.navCenter {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  margin: 0;
+  color: white;
+}
+
+.navRight {
+  display: flex;
+  align-items: center;
+}
+
+.navLinks {
+  display: flex;
+  gap: 2rem;
+}
+
+.navLink {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: white;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+.navLink:hover {
+  opacity: 0.7;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 1rem 2rem;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .navLinks {
+    gap: 1rem;
+  }
+  
+  .navLink {
+    font-size: 0.8rem;
+  }
+}
